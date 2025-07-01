@@ -1,6 +1,7 @@
 "use client";
 
 import useRevealOnScroll from "../lib/useRevealOnScroll";
+import React from "react";
 
 export default function HeroSection() {
   const revealRef = useRevealOnScroll();
@@ -21,53 +22,33 @@ export default function HeroSection() {
       >
         {/* Text Content */}
         <div className="flex-1 flex flex-col items-center lg:items-start justify-center gap-6 w-full lg:w-1/2 text-center lg:text-left px-4 sm:px-8 lg:px-0">
-          <div className="space-y-4 sm:space-y-6">
-            <h1
-              className="
-                text-5xl
-                xs:text-6xl
-                sm:text-7xl
-                md:text-7xl
-                lg:text-7xl
-                xl:text-8xl
-                font-extrabold
-                text-white
-                leading-tight
-                drop-shadow-2xl
-                mb-2
-                relative
-              "
+          <h1
+            className="text-6xl xs:text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-extrabold text-white leading-[1.05] drop-shadow-2xl mb-4"
+            style={{ fontFamily: 'Lufga, sans-serif', letterSpacing: '-0.04em', textTransform: 'uppercase' }}
+          >
+            Pl
+            <span
+              className="inline-block text-purple-500 align-middle mx-1"
+              style={{ fontFamily: 'Lufga, sans-serif', fontSize: '1.1em', verticalAlign: '-0.08em' }}
             >
-              <span
-                className="block text-[12vw] xs:text-6xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl font-black tracking-tight bg-gradient-to-r from-purple-400 via-white to-blue-400 bg-clip-text text-transparent animate-gradient-x"
-                style={{ WebkitTextStroke: '1px #a78bfa', letterSpacing: '-0.04em' }}
-              >
-                Pl<span className="inline-block text-purple-400 animate-pulse">▶</span>y
-              </span>
-              <span
-                className="block text-[10vw] xs:text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-black tracking-tight bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent animate-gradient-x"
-                style={{ WebkitTextStroke: '1px #a78bfa', letterSpacing: '-0.04em' }}
-              >
-                For
-              </span>
-              <span
-                className="block text-[13vw] xs:text-7xl sm:text-8xl md:text-8xl lg:text-8xl xl:text-9xl font-black tracking-tight bg-gradient-to-r from-purple-400 via-white to-blue-400 bg-clip-text text-transparent animate-gradient-x"
-                style={{ WebkitTextStroke: '1.5px #a78bfa', letterSpacing: '-0.04em' }}
-              >
-                Nation
-              </span>
-            </h1>
-            <p className="text-base xs:text-lg sm:text-xl lg:text-2xl text-white/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Join the ultimate gaming community and compete at the highest level
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-              <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-bold text-lg rounded-full shadow-2xl hover:from-purple-700 hover:to-blue-600 hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300">
-                Join Now
-              </button>
-              <button className="px-8 py-4 border-2 border-white/30 text-white font-bold text-lg rounded-full hover:bg-white/10 hover:border-white/50 transform hover:scale-105 transition-all duration-300">
-                Learn More
-              </button>
-            </div>
+              ▶
+            </span>
+            y
+            <br />
+            For
+            <br />
+            Nation
+          </h1>
+          <p className="text-lg sm:text-2xl text-white/80 max-w-xl mx-auto leading-relaxed mb-6" style={{ fontFamily: 'Lufga, sans-serif' }}>
+            Join the ultimate gaming community. Compete, connect, and rise to the top.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+            <button className="px-8 py-4 bg-gradient-to-r from-pink-600 to-indigo-500 text-white font-bold text-lg rounded-full shadow-2xl hover:from-pink-700 hover:to-indigo-600 hover:shadow-pink-500/25 transform hover:scale-105 transition-all duration-300">
+              Join Now
+            </button>
+            <button className="px-8 py-4 border-2 border-white/30 text-white font-bold text-lg rounded-full hover:bg-white/10 hover:border-white/50 transform hover:scale-105 transition-all duration-300">
+              Learn More
+            </button>
           </div>
         </div>
 

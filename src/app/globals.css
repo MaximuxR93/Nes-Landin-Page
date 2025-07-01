@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.cdnfonts.com/css/lufga');
 
 :root {
   --background: #ffffff;
@@ -27,4 +28,63 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.bebas-neue-uppercase {
+  font-family: var(--font-bebas-neue), 'Bebas Neue', 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+@keyframes blob1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+@keyframes blob2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-40px, 30px) scale(1.08); }
+  66% { transform: translate(20px, -20px) scale(1.02); }
+}
+@keyframes blob3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, 40px) scale(1.12); }
+  66% { transform: translate(-30px, -10px) scale(0.97); }
+}
+@keyframes blob4 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-20px, 20px) scale(1.05); }
+  66% { transform: translate(30px, -30px) scale(0.98); }
+}
+@keyframes blob5 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(40px, -30px) scale(1.08); }
+  50% { transform: translate(-30px, 30px) scale(0.97); }
+  75% { transform: translate(-20px, -20px) scale(1.04); }
+}
+.animate-blob1 { animation: blob1 18s ease-in-out infinite alternate; }
+.animate-blob2 { animation: blob2 22s ease-in-out infinite alternate; }
+.animate-blob3 { animation: blob3 20s ease-in-out infinite alternate; }
+.animate-blob4 { animation: blob4 24s ease-in-out infinite alternate; }
+.animate-blob5 { animation: blob5 26s ease-in-out infinite alternate; }
+
+@keyframes bg-gradient-move {
+  0% {
+    background: radial-gradient(ellipse at 60% 40%, #a259ff 0%, #3f2b96 40%, #ff256c 70%, #1e1e1e 100%);
+  }
+  25% {
+    background: radial-gradient(ellipse at 40% 60%, #ff256c 0%, #a259ff 40%, #3f2b96 70%, #1e1e1e 100%);
+  }
+  50% {
+    background: radial-gradient(ellipse at 70% 60%, #3f2b96 0%, #ff256c 40%, #a259ff 70%, #1e1e1e 100%);
+  }
+  75% {
+    background: radial-gradient(ellipse at 50% 30%, #a259ff 0%, #ff256c 40%, #3f2b96 70%, #1e1e1e 100%);
+  }
+  100% {
+    background: radial-gradient(ellipse at 60% 40%, #a259ff 0%, #3f2b96 40%, #ff256c 70%, #1e1e1e 100%);
+  }
+}
+.animate-bg-gradient > div {
+  animation: bg-gradient-move 18s ease-in-out infinite alternate;
 }
