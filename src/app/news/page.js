@@ -1,6 +1,6 @@
 import ComingSoon from '../components/ComingSoon';
 
-export default function NewsPage() {
+export default function SupportPage() {
   return <ComingSoon />;
 }
 

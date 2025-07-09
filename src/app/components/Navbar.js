@@ -70,7 +70,7 @@ export default function Navbar() {
             <img
               src="/assets/National Esports New Logo png 1.png"
               alt="National Esports Logo"
-              className="w-14 h-14 md:w-16 md:h-16 transition-transform duration-300 group-hover:scale-110"
+              className="w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110"
               style={{ display: "block" }}
             />
           </Link>
@@ -141,11 +141,11 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link 
-              href="/news" 
+              href="/support" 
               className="text-white text-base lg:text-lg font-medium transition-all duration-300 hover:text-purple-400 hover:scale-105 relative group"
               onClick={closeMenu}
             >
-              News
+              Support
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <div className="flex items-center gap-4">
@@ -242,11 +242,11 @@ export default function Navbar() {
               Tournaments
             </Link>
             <Link 
-              href="/news" 
+              href="/support" 
               className="block text-white text-lg font-medium py-3 px-4 rounded-lg hover:bg-white/10 hover:text-purple-400 transition-all duration-200"
               onClick={closeMenu}
             >
-              News
+              Support
             </Link>
             <div className="flex items-center gap-4">
               <Link

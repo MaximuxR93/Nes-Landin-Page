@@ -6,7 +6,7 @@ import React from "react";
 export default function HeroSection() {
   const revealRef = useRevealOnScroll();
   return (
-    <section className="relative w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center px-4 sm:px-6 lg:px-8 xl:px-24 pt-20 pb-12 lg:py-20 bg-transparent overflow-hidden">
+    <section className="relative w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center px-4 sm:px-6 lg:px-8 xl:px-24 pt-20 pb-12 lg:py-20 bg-transparent overflow-hidden overflow-x-hidden">
       {/* Enhanced Glowing background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[180vw] h-[180vw] sm:w-[140vw] sm:h-[140vw] lg:w-[100vw] lg:h-[100vw] xl:w-[80vw] xl:h-[80vw] bg-gradient-radial from-purple-700/50 via-purple-500/20 to-transparent rounded-full blur-3xl animate-pulse" />
@@ -21,32 +21,27 @@ export default function HeroSection() {
         data-reveal
       >
         {/* Text Content */}
-        <div className="flex-1 flex flex-col items-center lg:items-start justify-center gap-6 w-full lg:w-1/2 text-center lg:text-left px-4 sm:px-8 lg:px-0">
-          <h1
-            className="text-6xl xs:text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-extrabold text-white leading-[1.05] drop-shadow-2xl mb-4"
-            style={{ fontFamily: 'Lufga, sans-serif', letterSpacing: '-0.04em', textTransform: 'uppercase' }}
-          >
-            Pl
-            <span
-              className="inline-block text-purple-500 align-middle mx-1"
-              style={{ fontFamily: 'Lufga, sans-serif', fontSize: '1.1em', verticalAlign: '-0.08em' }}
+        <div className="flex-1 flex flex-col items-center lg:items-start justify-center gap-6 w-full lg:w-1/2 px-4 sm:px-8 lg:px-0">
+          <div className="w-full text-center lg:text-left">
+            <h1
+              className="neon-text text-6xl xs:text-7xl sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl font-extrabold leading-[1.05] drop-shadow-2xl mb-2"
+              style={{ fontFamily: 'Orbitron, Lufga, sans-serif', letterSpacing: '-0.04em', textTransform: 'uppercase' }}
             >
-              ▶
-            </span>
-            y
-            <br />
-            For
-            <br />
-            Nation
-          </h1>
-          <p className="text-lg sm:text-2xl text-white/80 max-w-xl mx-auto leading-relaxed mb-6" style={{ fontFamily: 'Lufga, sans-serif' }}>
-            Join the ultimate gaming community. Compete, connect, and rise to the top.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-            <button className="px-8 py-4 bg-gradient-to-r from-pink-600 to-indigo-500 text-white font-bold text-lg rounded-full shadow-2xl hover:from-pink-700 hover:to-indigo-600 hover:shadow-pink-500/25 transform hover:scale-105 transition-all duration-300">
+              Pl
+              <span className="play-symbol">▶</span>
+              y<br />
+              For<br />
+              Nation
+            </h1>
+            <p className="text-lg sm:text-2xl text-white/80 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-0 lg:mb-2" style={{ fontFamily: 'Lufga, sans-serif' }}>
+              Join the ultimate gaming community. Compete, connect, and rise to the top.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 w-full justify-center lg:justify-start pt-6">
+            <button className="px-8 py-4 bg-gradient-to-r from-pink-600 to-indigo-500 text-white font-bold text-lg rounded-full shadow-2xl">
               Join Now
             </button>
-            <button className="px-8 py-4 border-2 border-white/30 text-white font-bold text-lg rounded-full hover:bg-white/10 hover:border-white/50 transform hover:scale-105 transition-all duration-300">
+            <button className="px-8 py-4 border-2 border-white/30 text-white font-bold text-lg rounded-full">
               Learn More
             </button>
           </div>
@@ -59,7 +54,7 @@ export default function HeroSection() {
             <img
               src="/assets/controller_2.png"
               alt="Game Controller"
-              className="relative w-[95vw] max-w-[600px] md:max-w-[750px] xl:max-w-[900px] h-auto object-contain drop-shadow-2xl select-none transform group-hover:scale-105 group-hover:rotate-2 transition-all duration-500 hidden xs:block sm:block md:block lg:block xl:block"
+              className="relative w-full max-w-[800px] md:max-w-[1000px] xl:max-w-[1200px] h-auto object-contain drop-shadow-2xl select-none transform rotate-[-16deg] transition-all duration-500 hidden xs:block sm:block md:block lg:block xl:block"
               draggable="false"
               style={{ aspectRatio: '4/3' }}
             />
@@ -75,4 +70,4 @@ export default function HeroSection() {
       </div>
     </section>
   );
-} 
+}

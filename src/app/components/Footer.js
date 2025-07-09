@@ -32,7 +32,7 @@ export default function Footer() {
               <a href="/" className="block text-white/70 hover:text-white transition-colors duration-300 text-sm sm:text-base">Home</a>
               <a href="/#services" className="block text-white/70 hover:text-white transition-colors duration-300 text-sm sm:text-base">About Us</a>
               <a href="/tournaments" className="block text-white/70 hover:text-white transition-colors duration-300 text-sm sm:text-base">Tournaments</a>
-              <a href="/news" className="block text-white/70 hover:text-white transition-colors duration-300 text-sm sm:text-base">News</a>
+              <a href="/support" className="block text-white/70 hover:text-white transition-colors duration-300 text-sm sm:text-base">Support</a>
               <a href="/#contact" className="block text-white/70 hover:text-white transition-colors duration-300 text-sm sm:text-base">Contact</a>
             </div>
           </div>
